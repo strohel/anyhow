@@ -34,6 +34,6 @@ fn rustc_version() -> Option<Compiler> {
     };
 
     Some(Compiler {
-        nightly: version.contains("nightly") || version.contains("dev"),
+        nightly: version.contains("nightly"),
     })
 }
